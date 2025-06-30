@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class programs {
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		String[] questions= {"What is capital of france?\n (a) Berlin \n(b) Paris","Which programming is used for android development?\n(a)python \n(b)java"
+	};
+		char[]answers= {'b','b'};
+		int score=0;
+		System.out.println("Welcome to the Quiz");
+       for(int i=0;i<questions.length;i++) {
+    	   System.out.println("\nQuestion "+(i+1)+":");
+    	   System.out.println(questions[i]);
+    	   System.out.println("Your answer(a/b):");
+    	   char userAnswer=sc.next().toLowerCase().charAt(0);
+    	   if(userAnswer==answers[i]) {
+    		   System.out.println("correct");
+    		   score++;
+    		   
+    	   }
+    	   else {
+    		   System.out.println("Wrong! The correct answer was"+answers[i]);
+    	   }
+System.out.println("\n Quiz over!your final score"+score+"/"+questions.length);
+}
+}
+}
