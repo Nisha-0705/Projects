@@ -1,26 +1,59 @@
-import java.util.Scanner;
-public class programs {
-	public static void main(String[]args) {
-		Scanner sc=new Scanner(System.in);
-		String[] questions= {"What is capital of france?\n (a) Berlin \n(b) Paris","Which programming is used for android development?\n(a)python \n(b)java"
-	};
-		char[]answers= {'b','b'};
-		int score=0;
-		System.out.println("Welcome to the Quiz");
-       for(int i=0;i<questions.length;i++) {
-    	   System.out.println("\nQuestion "+(i+1)+":");
-    	   System.out.println(questions[i]);
-    	   System.out.println("Your answer(a/b):");
-    	   char userAnswer=sc.next().toLowerCase().charAt(0);
-    	   if(userAnswer==answers[i]) {
-    		   System.out.println("correct");
-    		   score++;
-    		   
-    	   }
-    	   else {
-    		   System.out.println("Wrong! The correct answer was"+answers[i]);
-    	   }
-System.out.println("\n Quiz over!your final score"+score+"/"+questions.length);
-}
-}
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name;
+    int score = 0;
+    string answer;
+    cout<<"Quiz Game";
+
+    cout << "Enter your name: ";
+    cin>>(cin, name);
+
+    cout << "Hello, " << name << "! Welcome to the Quiz Game!\n\n";
+
+    // Question 1
+    cout << "1. What is the capital of France?\n";
+    cout << "a) London\nb) Berlin\nc) Paris\nd) Madrid\n";
+    cout << "Your answer: ";
+    cin>>(cin, answer);
+
+    if (answer == "c" || answer == "Paris" || answer == "paris") {
+        score++;
+        cout << "Correct! You got 1 point.\n\n";
+    } else {
+        cout << "Incorrect! The correct answer is Paris.\n\n";
+    }
+
+    // Question 2
+    cout << "2. Which of these is a programming language?\n";
+    cout << "a) Java\nb) Coffee\nc) Tea\nd) Milk\n";
+    cout << "Your answer: ";
+    cin>>(cin, answer);
+
+    if (answer == "a" || answer == "Java" || answer == "java") {
+        score++;
+        cout << "Correct! You got 1 point.\n\n";
+    } else {
+        cout << "Incorrect! The correct answer is Java.\n\n";
+    }
+
+    // Question 3
+    cout << "3. What is 2 + 2?\n";
+    cout << "a) 3\nb) 4\nc) 5\nd) 6\n";
+    cout << "Your answer: ";
+    cin>>(cin, answer);
+
+    if (answer == "b" || answer == "4") {
+        score++;
+        cout << "Correct! You got 1 point.\n\n";
+    } else {
+        cout << "Incorrect! The correct answer is 4.\n\n";
+    }
+
+    // Final score
+    cout << "Game Over! Your final score is " << score << " out of 3.\n";
+
+    return 0;
 }
