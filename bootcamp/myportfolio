@@ -217,19 +217,19 @@
       <div class="project-card">
         <h3>Text Animation</h3>
         <p>Text animation using CSS keyframes and animation properties to create motion effects.<br>
-          <a href="#" target="_blank">Open Project</a>
+          <a href="https://textanimationproject.glitch.me/" target="_blank">Open Project</a>
         </p>
       </div>
       <div class="project-card">
         <h3>🌐 360° Image Viewer</h3>
         <p>An immersive 360° image viewer built using A-Frame. Explore the VR environment interactively.<br>
-          <a href="#" target="_blank">Open Project</a>
+          <a href=" target="_blank">Open Project</a>
         </p>
       </div>
       <div class="project-card">
         <h3>Object Rotation</h3>
         <p>Rotating 3D objects like cubes and cylinders using WebXR.<br>
-          <a href="#" target="_blank">Open Project</a>
+          <a href="https://rotationofobjects.glitch.me/" target="_blank">Open Project</a>
         </p>
       </div>
     </div>
@@ -245,6 +245,10 @@
       <a href="https://www.linkedin.com/in/nisha-kamboj-7bb863326/" class="contact-item" target="_blank" rel="noopener noreferrer">
         <strong>💼 LinkedIn</strong><br>
         Connect with me
+      </a>
+       <a href="https://github.com/Nisha-0705" class="contact-item" target="_blank" rel="noopener noreferrer">
+        <strong>💼 Github</strong><br>
+        My profile
       </a>
     </div>
   </div>
